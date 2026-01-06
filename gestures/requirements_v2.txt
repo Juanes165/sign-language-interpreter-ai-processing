@@ -1,0 +1,18 @@
+# Requirements para train_lstm_actions_v2.py
+# Entrenamiento LSTM con GPU/CPU y métricas detalladas
+
+# Core de TensorFlow y Keras
+tensorflow==2.17.1
+
+# Procesamiento de datos
+numpy>=1.21.0
+
+# Métricas y análisis
+scikit-learn>=1.0.0
+
+# Opcional: Conversión a TensorFlow.js (instalar si necesitas exportar)
+# tensorflowjs==4.11.0
+
+# Nota: Este archivo contiene solo lo necesario para train_lstm_actions_v2.py
+# Para exportar a TF.js, usa train_lstm_node_v5.js o instala tensorflowjs
+

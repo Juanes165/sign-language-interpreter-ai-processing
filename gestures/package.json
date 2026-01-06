@@ -1,0 +1,31 @@
+{
+  "name": "lstm-gesture-trainer",
+  "version": "1.0.0",
+  "description": "Entrenamiento de modelo LSTM para reconocimiento de gestos con TensorFlow.js",
+  "main": "src/train_lstm_node_v6.js",
+  "scripts": {
+    "train": "node src/train_lstm_node_v6.js",
+    "verify": "node src/verify_exported_model.js"
+  },
+  "keywords": [
+    "tensorflow",
+    "lstm",
+    "gesture-recognition",
+    "sign-language"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "@tensorflow/tfjs-node-gpu": "^4.22.0",
+    "dotenv": "^17.2.3",
+    "googleapis": "^164.1.0",
+    "numpy-parser": "^1.0.0"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

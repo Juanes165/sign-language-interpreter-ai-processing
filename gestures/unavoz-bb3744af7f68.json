@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "unavoz",
+  "private_key_id": "bb3744af7f6876bcb8284332bf947479fa3d2683",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCRyAsNTCT+zl20\nTmXz1mMOQ4WJZmyYrkdO7r2QO+8ELNoqvrpLy4r3ah/vtOch8QChyQcGMF3A3vla\nxdjqm/Yg4/ZyFqw2LTJsOnJ1m5BF0z8bgTGdL9savFktbtPYroN4lndKRuf+ky4A\n5TYqXPx8lRgNaLcUMIQb06Wi//zmjjPDq55oftcGVq9/YGQ7McY1BntLeM4ngFnL\nb3jCFSz/FltMgZRVHbrNtsh8pblslU8FlEQm/BiGvtwf6ay0cOLxhKhyYdJFJiTv\nvRedMoOKDjLoHUbyCswcmAA9C3Z8GQQtdrZTWYXZNED+iy9TiC2wFKzbckZDPbdr\nGAa5U233AgMBAAECggEADJbNWYcfVL/GeMkiZcW4RSWQlRZ6v06his/0H84FLIOh\nDXruBJidthL8kgs5wIUa7F27VQ39MqguuWeHfW8deKanBCAwG/eYOJ9tffmCon0F\nIJ9uBOh6j9r/CnzdH4Omh9XalFf+Nc5I9TvWCx9/kFShwJqv4Lb12Z9T2PkpQlGZ\nCW4hFcV6ClET8phkKa5hJX4iFNXZESA2AESThRuvNL4zY3cd//u7D+q1ShIiP2m9\neJX93V/sVaNsEpbSQrK2KhIvkbdkW2CdMHZvhoentwxSwN4vAytvkvx+Y5abBDrH\nIyY6i9M3mzE0Jicn1ewGxm/CkRoAHiC0J8/uS+/ysQKBgQDDwom6KCQMey1qZ+Me\nqyG+ZJM9UB1CJXXBbNWarjzY1FuhJPEmOZKIhbp2H4i0jE+4FtEu54wupX/R2Mq2\n/BaYRsgxAwDELo6NqdaW9XzLNd63HoONi8dJq/YfpFzMS9E4iGTYg1rIvWio2BDE\nB9EdkXJWTYUUUVDzGIK2M9cuZwKBgQC+pFP27/i7q8q9/ljBqHbavqNYQ5lXLR0o\nasm7/FB0iO7JAZzkwEByGWfD16elVyWAZDxPvbGmuknXaXsP+jbVrguHVtGpNHhm\nNrI8Tv+ZIYtuErNx6g3rUVmlEK/+lFi91Eb2QkQbj4L6ldRpe5+w2/VGHkOgcfG6\n0qLKDDPp8QKBgF6Ur1Zx7njZSqgOaX130WXb0gfdnUVINAywOMPzSxK4B01kO97s\nEhBEDELmGXaiFCItZAP1e5VOAOOyir6+LWyFRlPnz4b5t4ZaeIOXOCQ2ctSmuYi5\n8B94JgJDt1I9j2hw/cheLo6udNKfEfqkjDRtAYEREyst3p6VSRIfGeghAoGBAJFv\nM07SyuIAsG44tuUl62X8wQf4qeZDWFcZAEUUuxvryp41SMeJkqB4mRxiTFZqIQXN\nceUzRW939hULNwJ9U4+3crwQk2mNybvQRjCT45GicYfLZHGmqG+4Y7b1AA4qhXhr\nlKcQ7nxIAxe/bYf681wssPSI6fZgdpSbU+znWkNBAoGAcUTgHOeBkDUuzHCe9yKx\nxOyTOI/8P0ET7Zk9758/Rtwh5JnQbooJ5cIn6hRaAXgcyvu2S1DhmvMy1eEN4cDd\nao1bL+RXtdabcyyVuVa+7Je1XsTdyFcj2CddVrtZ1w4w0JyW6Vbc4Kgf4eAkbJrt\nirL2Ynoq+ZZIJU5tKcE33bs=\n-----END PRIVATE KEY-----\n",
+  "client_email": "unavoz@unavoz.iam.gserviceaccount.com",
+  "client_id": "102178299328107091559",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/unavoz%40unavoz.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

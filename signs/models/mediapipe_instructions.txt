@@ -1,0 +1,68 @@
+# Instrucciones para entrenar un modelo MediaPipe GestureRecognizer
+
+Para entrenar un modelo personalizado de reconocimiento de gestos, sigue estos pasos:
+
+1. Instala las herramientas de MediaPipe Model Maker:
+   ```
+   pip install mediapipe-model-maker
+   ```
+
+2. Utiliza las imágenes procesadas en: /mnt/c/Users/geide/Documents/GitHub/Tesis/Señas/data/export
+
+3. IMPORTANTE: MediaPipe requiere una categoría especial llamada 'None' con imágenes que representan la ausencia de gestos.
+
+4. Ejecuta el siguiente código Python:
+   ```python
+   from mediapipe_model_maker import gesture_recognizer
+   import os
+   import numpy as np
+   import cv2
+
+   # Define la ruta a tus datos
+   data_dir = '/mnt/c/Users/geide/Documents/GitHub/Tesis/Señas/temp_training'
+
+   # Asegúrate de tener una carpeta 'None' con imágenes
+   none_dir = os.path.join(data_dir, 'None')
+   os.makedirs(none_dir, exist_ok=True)
+   if len(os.listdir(none_dir)) == 0:
+       # Crear imágenes artificiales para la clase None
+       for i in range(10):
+           img = np.zeros((224, 224, 3), dtype=np.uint8)
+           cv2.imwrite(os.path.join(none_dir, f'none_{i}.jpg'), img)
+       print('Creadas imágenes para clase None')
+
+   # Carga los datos
+   data = gesture_recognizer.Dataset.from_folder(data_dir)
+   print('Clases encontradas:', data.label_names)
+
+   # Dividir manualmente en conjuntos de entrenamiento y validación
+   train_data, validation_data = data.split(0.8)
+
+   # Configurar opciones del modelo y entrenamiento
+   hparams = gesture_recognizer.HParams(
+       export_dir='/mnt/c/Users/geide/Documents/GitHub/Tesis/Señas/models',
+       batch_size=4,
+       epochs=20
+   )
+   model_options = gesture_recognizer.ModelOptions(dropout_rate=0.1)
+   options = gesture_recognizer.GestureRecognizerOptions(
+       model_options=model_options,
+       hparams=hparams
+   )
+
+   # Entrena el modelo con options como primer parámetro
+   model = gesture_recognizer.GestureRecognizer.create(
+       options=options,
+       train_data=train_data,
+       validation_data=validation_data
+   )
+
+   # Evalúa el modelo
+   result = model.evaluate(validation_data)
+   print(f'Exactitud: {result[1]}')
+
+   # Exporta el modelo
+   model.export_model()
+   ```
+
+5. Una vez completado, coloca el archivo gesture_recognizer.task en: /mnt/c/Users/geide/Documents/GitHub/Tesis/Señas/models

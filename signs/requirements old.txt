@@ -1,0 +1,28 @@
+# Librerías de visión por computadora y procesamiento de imágenes
+opencv-python
+mediapipe
+
+# Librerías de machine learning y estadísticas
+numpy
+torch
+scikit-learn
+
+# Librerías de desarrollo de GUI (interfaz gráfica)
+kivy
+
+# Librerías de base de datos
+sqlalchemy
+python-dotenv
+
+# Librerías adicionales para manejo de estructuras, modelos y entrenamiento
+pandas
+psycopg2
+# Actualizado para compatibilidad con Python 3.11
+pyyaml>=6.0
+
+# Para el entrenamiento del modelo MediaPipe
+transformers
+tensorflow
+
+# Opcional: MediaPipe Model Maker (instalar manualmente si se necesita)
+# pip install mediapipe-model-maker

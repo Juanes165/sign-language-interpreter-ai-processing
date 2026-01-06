@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+venv_converter/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+package-lock.json
+
+# TensorFlow / Modelos
+models/modelo_tfjs_node/
+models/modelo_tfjs/
+models/modelo_tfjs_graph/
+models/modelo_tfjs_quant/
+models/saved_model_web/
+*.h5
+*.keras
+*.tflite
+*.pb
+
+# Archivos temporales
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema
+# .env
+# .env.local
