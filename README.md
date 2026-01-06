@@ -30,10 +30,3 @@ Este proyecto tiene como objetivo desarrollar un intérprete de lengua de señas
 ## Uso
 - Ejecuta `setup_and_train.bat` o `setup_and_train.sh` para configurar el entorno y entrenar los modelos.
 - Utiliza los scripts en la carpeta `src/` para tareas específicas como procesamiento de datos, entrenamiento y reconocimiento.
-
-## Contribuidores
-Este proyecto se desarrolla como parte de una tesis para avanzar en las aplicaciones de IA en la interpretación del lengua de señas.
-
-## Licencia
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
-
